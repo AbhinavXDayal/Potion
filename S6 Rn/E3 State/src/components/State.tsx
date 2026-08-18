@@ -1,4 +1,4 @@
-import Divider from "@/components/Divider";
+import Divider from "./Divider"
 import {useState} from 'react';
 import {Button, Text, View} from 'react-native';
 
@@ -19,3 +19,5 @@ const Cat =(props: CatProps)=>
         </View>
     )
 }
+
+export default State;

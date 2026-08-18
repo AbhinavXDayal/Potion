@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h2>This is html forms & input tags tutorial</h2>
+
+    <form action="backend.php">
+
+        <label for="name"> Name: </label>
+
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility">
+        </div>
+        
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        
+        <div>
+            Write about yourself: <textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div>
+            <label for="car">Car</label>
+
+            <select name="myCar" id="car">
+                <option value="Ciaz">Ciaz</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        
+        <div>
+            <button type="submit">Submit now</button>
+            <button type="reset">Reset now</button>
+            <input type="submit" value="Submit 2">
+        </div>
+        
+        <div>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" min="1" max="10" name="Cheese_Level">
+        </div>
+        
+        <div>
+            <form action="dummy">
+                <label for="first">Enter first name</label>
+                <input type="text" name="first" id="first" required>
+                <button>Submit</button>
+            </form>
+        </div>
+
+    </form>
+</body>
+
+</html>

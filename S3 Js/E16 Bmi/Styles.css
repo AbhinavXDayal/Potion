@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(35, 25, 46);
+    color: rgb(214, 214, 193);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 575px;
+    height: 825px;
+    background-color: rgb(40, 34, 46);
+    border-radius: 70px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Center text inside the container */
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#height,
+#weight {
+    width: 140px; /* Make input fields take up 80% of the container width */
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+#results {
+    font-size: 35px;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    background-color: #b2a1a1;
+    border-radius: 10px;
+    color: #f7eeee;
+    font-size: 20px;
+    display: block;
+    margin: 25px auto; /* Center the button horizontally */
+    text-align: center; /* Center text inside the button */
+    line-height: 40px; /* Vertically center the text inside the button */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a7c7c; /* Button hover effect */
+}
+
+#weight-guide {
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+}
+
+#weight-guide h3 {
+    margin-bottom: 15px;
+}
+
+#weight-guide p {
+    font-size: 18px;
+}

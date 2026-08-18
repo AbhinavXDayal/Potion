@@ -1,0 +1,69 @@
+h2
+{
+    background-color: rgb(121, 96, 145);
+    border: 5px solid rgb(115, 133, 184);
+    color: rgb(228, 215, 215);
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+h2:nth-of-type(2n)
+{
+    background-color: rgb(161, 158, 116);
+}
+
+h2:nth-of-type(3n)
+{
+    background-color: rgb(167, 144, 116);
+}
+
+h2:nth-of-type(4n)
+{
+    background-color: rgb(98, 163, 142);
+}
+
+section:first-of-type h2:nth-of-type(1)
+{
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+}
+
+section:first-of-type h2:nth-of-type(2)
+{
+    transform: scale(0.9);
+}
+
+section:first-of-type h2:nth-of-type(3)
+{
+    transform: scalex(1.5);
+}
+
+section:first-of-type h2:nth-of-type(4)
+{
+    transform: translateX(200px);
+}
+
+section:nth-of-type(2) h2:first-of-type 
+{
+    transform: skew(30deg);
+}
+
+section:nth-of-type(2) h2:nth-of-type(2) 
+{
+    transform: skew(10deg, 20deg);
+}
+
+section:nth-of-type(2) h2:nth-of-type(3) 
+{
+    transform: rotate(-20deg) scale(1.3);
+}
+
+section:nth-of-type(2) h2:nth-of-type(4) 
+{
+    transform: translatex(-500px) rotate(0.5turn) scaley(2);
+}

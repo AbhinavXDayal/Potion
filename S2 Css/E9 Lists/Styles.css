@@ -1,0 +1,40 @@
+body
+{
+    background-color: rgb(32, 6, 44);
+}
+
+h1, h2
+{
+    color: rgb(162, 127, 196);
+}
+
+.box > p
+{
+    color: rgb(218, 124, 124);
+}
+
+.box li
+{
+    color: rgb(173, 188, 201);
+}
+
+li.done
+{
+    color: rgb(154, 189, 134);
+}
+
+ul p.done
+{
+    font-size: 0.5rem;
+    color: antiquewhite;
+}
+
+p
+{
+    color: rgb(163, 83, 83);
+}
+
+p + ol
+{
+    color: rgb(135, 139, 74);
+}

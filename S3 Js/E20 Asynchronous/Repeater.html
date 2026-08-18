@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    body 
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(23, 31, 44);
+      color: #c7b1b1;
+    }
+    button 
+    {
+      width: 100px;
+      height: 40px;
+      color: whitesmoke;
+      background-color: grey;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Loading</h1>
+  <button id="Start">Start</button>
+  <button id="Stop">Stop</button>
+</body>
+
+<script>
+  const SayDate = function (Str) 
+  {
+    console.log(Str, "Abhi", Date.now());
+  };
+
+  let IntervalId; 
+
+  document.querySelector("#Start").addEventListener("click", function () 
+  {
+    IntervalId = setInterval(SayDate, 1000, "Hi");
+  });
+
+  document.querySelector("#Stop").addEventListener("click", function () 
+  {
+    clearInterval(IntervalId);
+  });
+</script>
+
+</html>

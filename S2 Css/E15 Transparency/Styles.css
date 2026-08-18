@@ -1,0 +1,26 @@
+p
+{
+    color: whitesmoke;
+}
+
+section
+{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(115, 75, 134);
+}
+
+#rgba
+{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(206, 146, 146, 0.3);
+}
+
+#opacity
+{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(73, 72, 146);
+    opacity: 0.7;
+}

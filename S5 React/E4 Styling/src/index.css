@@ -1,0 +1,22 @@
+*
+{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body
+{
+    background: rgb(84, 69, 98);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh
+}
+
+h2
+{
+    font-family:sans-serif;
+    border:2px solid #b49898;
+    border-radius: 10px;
+    padding:10px
+}

@@ -1,0 +1,73 @@
+body
+{
+    background-color: rgb(48, 47, 46);
+    margin : 0px;
+    padding-top: 20px;
+}
+
+img 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(120, 119, 121);
+    box-shadow: 0 0 20px rgba(182, 107, 107, 0.5);
+}
+
+.nav 
+{
+    display: inline-block;
+    transform: translateY(-50%);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 400px;
+}
+
+button
+{
+    width: 200px;
+}
+
+.img-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    opacity: 0.5;
+}
+
+.forms
+{
+    border: 2px solid rgb(229, 242, 255);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.first, .second
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.but
+{
+    background: rgba(0, 0, 0, 0.521);
+    color: rgb(221, 194, 194);
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transition: all 0.15s;
+}
+
+.but:hover
+{
+    border-color: rgb(142, 108, 173);
+    color: rgb(221, 192, 192);
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}

@@ -1,0 +1,114 @@
+.circle
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 9px;
+    background-color: rgb(93, 60, 116);
+    transition: 0.3s;
+}
+
+.circle:hover
+{
+    background-color: rgb(197, 118, 118);
+    border-radius: 50%;
+}
+
+.square
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 9px;
+    background-color: rgb(185, 160, 129);
+    transition: background-color 1s;
+}
+
+.square:hover
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(104, 75, 131);
+}
+
+.rectangle
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 9px;
+    background-color: rgb(84, 129, 114);
+    transition: background-color 1s 0.1s;
+}
+
+.rectangle:hover
+{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(104, 122, 180);
+}
+
+.idk
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 9px;
+    background-color: rgb(15, 136, 136);
+    transition: all 1s 0.2s;
+}
+
+.idk:hover
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.idk2
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 9px;
+    background-color: rgb(126, 84, 120);
+    transition: background-color 1s, border-radius 2s;
+}
+
+.idk2:hover
+{
+    background-color: rgb(145, 146, 88);
+    border-radius: 50%;
+}
+
+section div
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 9px;
+    background-color: rgb(108, 91, 134);
+    margin: 20px 0;
+    transition: margin-left 2s;
+}
+
+section:hover div
+{
+    margin-left: 500px;
+}
+
+div:nth-of-type(1)
+{
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2)
+{
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3)
+{
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+div:nth-of-type(4)
+{
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}

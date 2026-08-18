@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body
+    style="
+      background-color: rgb(31, 23, 44);
+      color: #c7b1b1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    "
+  >
+    <div>
+      <ul id="Images">
+        <li>
+          <img
+            id="Photo1"
+            src="https://images.unsplash.com/photo-1482784160316-6eb046863ece?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c25vd3xlbnwwfHwwfHx8MA%3D%3D"
+            style="
+              border-radius: 12px;
+              box-shadow: 0 0 15px rgba(225, 190, 255, 0.5);
+              width: 300px;
+              height: auto;
+            "
+          />
+        </li>
+        <li>
+          <img
+            id="Photo2"
+            src="https://images.unsplash.com/photo-1473800447596-01729482b8eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D"
+            style="
+              border-radius: 12px;
+              box-shadow: 0 0 15px rgba(225, 190, 255, 0.5);
+              width: 300px;
+              height: auto;
+            "
+          />
+        </li>
+        <li>
+          <img
+            id="Photo3"
+            src="https://images.unsplash.com/photo-1537819191377-d3305ffddce4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2fHx8ZW58MHx8fHx8"
+            style="
+              border-radius: 12px;
+              box-shadow: 0 0 15px rgba(225, 190, 255, 0.5);
+              width: 300px;
+              height: auto;
+            "
+          />
+        </li>
+        <li>
+          <a
+            href="https://google.com"
+            id="Google"
+            style="
+              background-color: #332f2f;
+              border-radius: 25px;
+              color: #c0adad;
+              padding: 10px 20px;
+              text-align: center;
+              display: inline-block;
+            "
+          >
+            Go to Google
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      document.getElementById("Images").addEventListener(
+        "click",
+        function (e) {
+          console.log("Clicked inside ul");
+        },
+        false
+      );
+
+      document.getElementById("Photo3").addEventListener(
+        "click",
+        function (e) {
+          console.log("Clicked Photo 3");
+          e.stopPropagation();
+        },
+        false
+      );
+
+      document.getElementById("Google").addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          console.log(e);
+        },
+        false
+      );
+
+      document.querySelector("#Images").addEventListener("click", function (e) {
+        console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.id);
+
+          let RemoveIt = e.target.parentNode;
+          RemoveIt.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

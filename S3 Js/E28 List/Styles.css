@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #101c23;
+    color: #beb4b4;
+    padding: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.Container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141b27, #362940b9);
+    padding: 10px;
+}
+
+.Todo {
+    width: 100%;
+    max-width: 540px;
+    background: #434040bf;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.1); /* Glow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Todo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 255, 255, 0.2); /* Glow effect on hover */
+}
+
+.Todo h2 {
+    color: #d5cccc;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.Todo h2:hover {
+    color: #f0a5a5;
+    text-shadow: 0 0 10px rgba(255, 165, 165, 0.8); /* Glow effect */
+}
+
+.Todo h2 img {
+    width: 40px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.Row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Row:hover {
+    background: #d0d7e2;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Glow effect on hover */
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #947c79;
+    box-shadow: 0 0 5px rgba(148, 124, 121, 0.5); /* Glow effect */
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #947c79;
+    color: #d5cccc;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(148, 124, 121, 0.4); /* Default glow effect */
+}
+
+button:hover {
+    background: #b8a094;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(64, 31, 15, 0.7); /* Glow effect on hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: none; /* Remove the box-shadow */
+}
+
+ul li:hover {
+    transform: translateX(10px);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(E32_6.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    transition: background-image 0.3s ease, transform 0.3s ease;
+}
+
+ul li.Checked {
+    color: #dac7c7;
+    text-decoration: line-through;
+    background: rgba(255, 255, 255, 0.084);
+    box-shadow: none; /* Remove glow or box-shadow from checked items */
+    border-radius: 20px;
+}
+
+ul li.Checked::before {
+    background-image: url(E32_4.png);
+}
+
+ul li::before,
+ul li.Checked::before {
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    color: #bd9999;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #9d8a8acb;
+    box-shadow: 0 0 15px #322c2b, 0 0 10px rgba(50, 41, 41, 0.3); 
+}

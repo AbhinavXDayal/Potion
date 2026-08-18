@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: rgb(26, 15, 33);
+        }
+        button
+        {
+            width: 100px;
+            height: 35px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="Lavender">Lavender</button>
+    <button id="Rose">Rose</button>
+</body>
+
+<script>
+    function Outer()
+    {
+        let User = "Abhi"
+
+        function Inner()
+        {
+            let Secret = "123"
+            console.log("Inner", User);
+        }
+
+        function Inner2()
+        {
+            console.log("Inner2", User);
+            console.log(Secret);
+        }
+        Inner()
+        Inner2()
+    }
+    Outer()
+</script>
+
+<script>
+    function ClickHandler(Color)
+    {
+        return function()
+        {
+            document.body.style.backgroundColor = `${Color}`;
+        }
+    }
+
+    document.getElementById("Lavender").onclick = ClickHandler("Lavender")
+    document.getElementById("Rose").onclick = ClickHandler("Mistyrose")
+</script>
+
+</html>

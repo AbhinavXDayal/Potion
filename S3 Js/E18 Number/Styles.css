@@ -1,0 +1,163 @@
+/* Global Styles */
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    color: #f5f5dc; /* Beige text color */
+    background-color: #111b29; /* Deep dark blue */
+    font-size: 18px;
+    overflow: hidden; /* Remove the scrollbar */
+}
+
+/* Heading Style */
+h1 {
+    background-color: #282f31; /* Soft deep blue */
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+    background-color: #3b4b5c; /* Slightly lighter blue-gray on hover */
+}
+
+/* Wrapper for Main Content */
+#wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 20px;
+    background-color: #1d2a37; /* Rich deep blue-gray */
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Form Input Styles */
+#guessField {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 25px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #3a4750; /* Subtle dark gray-blue */
+    border: 2px solid #5a6b7e; /* Cool blue-gray border */
+    color: #f5f5dc; /* Beige text color */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(147, 112, 219, 0.6); /* Soft purple glow */
+}
+
+#guessField:focus {
+    border-color: #5a4c5f; /* Soft purple border on focus */
+    background-color: #7b2222; /* Darker background on focus */
+    outline: none;
+    box-shadow: 0 0 15px rgb(106, 84, 115); /* Bright glowing purple */
+}
+
+/* Button Styles */
+button, #subt {
+    background-color: #363a3f;
+    color: #f5f5dc;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(67, 58, 87, 0.5); /* Purple glow */
+}
+
+button:hover, #subt:hover {
+    background-color: rgb(98, 81, 105); /* Soft purple on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgb(98, 81, 105); /* Strong glowing purple */
+}
+
+/* Output/Result Styles */
+#guess {
+    font-size: 55px;
+    color: #f5f5dc;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.lastResult, .guesses {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 9px;
+    color: #f5f5dc;
+}
+
+.lastResult {
+    background-color: #7f8c8d; /* Light gray background */
+}
+
+.guesses {
+    background-color: #5d6d7e; /* Lighter blue-gray background */
+}
+
+/* Additional Text Styles */
+p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Button container */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* NewGame Button */
+#NewGame {
+    width: 190px;  /* Fixed width */
+    height: 50px;  /* Fixed height */
+    background-color: #34495e;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5dc;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(89, 80, 108, 0.5); /* Soft purple glow */
+    transition: all 0.3s ease;
+}
+
+#NewGame:hover {
+    background-color: rgb(78, 67, 82); /* Purple on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgb(78, 67, 82); /* Strong purple glowing effect */
+}
+
+/* Smooth transition effect for the entire page */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Ensuring that elements don't overflow their container */
+button, #NewGame, #guessField {
+    box-sizing: border-box;
+}

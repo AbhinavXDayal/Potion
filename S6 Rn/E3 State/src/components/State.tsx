@@ -1,23 +1,49 @@
-import Divider from "./Divider"
-import {useState} from 'react';
-import {Button, Text, View} from 'react-native';
+import Divider from "./Divider";
+import { useState } from "react";
+import { Button, Text, View } from "react-native";
 
-type CatProps={
-    name: string
-}
+// Defining what props this component accepts
+type CatProps = {
+  name: string;
+};
 
-const Cat =(props: CatProps)=>
-{
-    const [IsHungry, SetIsHungry]
-    =useState(true);
+// Creating Cat component
+const Cat = (props: CatProps) => {
+  // Cat starts hungry, so IsHungry is true
+  const [IsHungry, SetIsHungry] = useState(true);
 
-    return (
-        <View>
-            <Text>
-                I am {props.name} & i am {IsHungry ? 'hungry':'full'}
-            </Text>
-        </View>
-    )
-}
+  // Returns ui
+  return (
+    <View>
+      <Text>
+        {/* If hungry show hungry, otherwise show full */}I am {props.name} & i
+        am {IsHungry ? "hungry" : "full"}
+      </Text>
 
-export default State;
+      <Button
+        // When pressed, makes cat full
+        onPress={() => {
+          SetIsHungry(false);
+        }}
+        // IsHungry → false, !false = true & disables btn
+        disabled={!IsHungry}
+        // If hungry show food msg, otherwise show ty
+        title={IsHungry ? "Give me some food, please !" : "Thank you"}
+      />
+    </View>
+  );
+};
+
+// Creating Cafe component
+const Cafe = () => {
+  // Returns multiple Cat components
+  return (
+    <>
+      <Cat name="Rango" />
+      <Cat name="Coco" />
+    </>
+  );
+};
+
+// Exporting our component
+export default Cafe;

@@ -1,7 +1,7 @@
-import PizzaTranslator from "../components/Textinput";
+import Scrollview from "../components/Scrollview";
 
 // Creating Index component
 export default function Index() {
-  // Returns PizzaTranslator component
-  return <PizzaTranslator />;
+  // Returns Scrollview component
+  return <Scrollview />;
 }

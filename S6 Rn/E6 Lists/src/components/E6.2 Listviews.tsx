@@ -32,10 +32,6 @@ const SectionView = () => {
             data: [
               "Jackson",
               "James",
-              "Jillian",
-              "Jimmy",
-              "Joel",
-              "John",
               "Julie",
             ],
           },

@@ -6,7 +6,9 @@ const FixedDimensions=()=>
         <View>
             <View
             style={{
-                width:50
+                width:50,
+                height:50,
+                backgroundColor:'powderblue',
             }}
             </View>
         </View>
